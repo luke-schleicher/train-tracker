@@ -1,0 +1,10 @@
+<section class="container">
+  <section class="train-message">
+    <% if train_verdict %>
+      <h1>You can catch the next train!</h1>
+    <% else %>
+      <h1> You'll have to catch the next train</h1>
+    <% end %>
+    <p>You have <%= minutes_until_train_arrives%> minutes to catch the train</p>
+  </section>
+</section>
