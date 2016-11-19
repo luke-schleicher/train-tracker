@@ -4,7 +4,10 @@ GEM
     backports (3.6.8)
     daemons (1.2.4)
     eventmachine (1.2.1)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     multi_json (1.12.1)
+    multi_xml (0.5.5)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
@@ -31,6 +34,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  httparty
   sinatra
   sinatra-contrib
   thin
