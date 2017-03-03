@@ -6,6 +6,7 @@ GEM
     eventmachine (1.2.1)
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
+    json (2.0.3)
     multi_json (1.12.1)
     multi_xml (0.5.5)
     rack (1.6.5)
@@ -35,9 +36,10 @@ PLATFORMS
 
 DEPENDENCIES
   httparty
+  json
   sinatra
   sinatra-contrib
   thin
 
 BUNDLED WITH
-   1.12.5
+   1.14.3
