@@ -1,5 +1,0 @@
-<% if train_verdict %>
-  <%= erb :"shared/can_catch_train", :locals => { :minutes_until_train_arrives => minutes_until_train_arrives, :closest_station => closest_station } %>
-<% else %>
-  <%= erb :"shared/cannot_catch_train", :locals => { :minutes_until_train_arrives => minutes_until_train_arrives, :closest_station => closest_station } %>
-<% end %>

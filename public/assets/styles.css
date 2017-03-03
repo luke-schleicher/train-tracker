@@ -1,0 +1,82 @@
+body { 
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .navbar-right { 
+    margin-top: 15px !important; 
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar { border-radius: 0; }
+}
+
+main { 
+  text-align: center; 
+  -webkit-font-smoothing: antialiased;
+}
+
+.can-catch-train {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#14ce68+0,6dce8f+100 */
+background: #14ce68; /* Old browsers */
+background: -moz-linear-gradient(top,  #14ce68 0%, #6dce8f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #14ce68 0%,#6dce8f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #14ce68 0%,#6dce8f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14ce68', endColorstr='#6dce8f',GradientType=0 ); /* IE6-9 */
+}
+
+.cannot-catch-train {
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a30b22+0,bf0d28+100 */
+background: #a30b22; /* Old browsers */
+background: -moz-linear-gradient(top,  #a30b22 0%, #bf0d28 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #a30b22 0%,#bf0d28 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #a30b22 0%,#bf0d28 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a30b22', endColorstr='#bf0d28',GradientType=0 ); /* IE6-9 */
+}
+
+.train-message { 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  -webkit-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.train-message h1 {
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+.train-message p {
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.fa-train {
+  animation: move 3s infinite ease-in-out;
+}
+
+@keyframes move {
+  0% { margin-left: -10px;}
+  50% { margin-left: 10px; }
+  100% { margin-left: -10px;}
+}
+
+
+footer { 
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+  right: 0; 
+  background: #f8f8f8; 
+  border-top: 1px solid #e7e7e7; 
+}
+
+footer p {
+  margin: 0;
+  padding: 20px 0;
+}
