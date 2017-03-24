@@ -8,7 +8,7 @@ class Conductor
     @minutes_until_train_arrives = minutes_until_train_arrives
     origin = 'origin=' + user_coords.join(',') + '&'
     destination = 'destination=' + station_searcher.closest_station_coords.join(',') + '&'
-    endpoint = MAPS_ENDPOINT + origin + destination + 'key=AIzaSyCwOJDiyHaZ_0XR5tghgUGc7oMfIputoF0'
+    endpoint = MAPS_ENDPOINT + origin + destination + 'key=' + ENV['METRA_GOOGLE_MAPS']
     maps_string = `curl #{endpoint}`
     @json = JSON.parse(maps_string)
   end
